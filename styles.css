@@ -7,15 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
 }
-
-a {
-  text-decoration: none;
 
 a {
   text-decoration: none;
@@ -25,20 +17,11 @@ a:hover {
   background: transparent;
   cursor: pointer;
   color: #03a9f4;
-
-a:hover {
-  background: transparent;
-  cursor: pointer;
-  color: #03a9f4;
 }
 
 ul {
   list-style: none;
-
-ul {
-  list-style: none;
 }
-
 h3 {
   font-size: 2.4rem;
   color: #0a2940;
@@ -1148,12 +1131,6 @@ nav .search-form label:hover {
   margin: 0 auto 15px auto;
   color: white !important;
   transition: .3s;
-}
-
-@media (min-width: 992px) {
-  #testimonials .testimonial-item p {
-    /* width: 80%; */
-  }
 }
 
 #testimonials .swiper-pagination {
