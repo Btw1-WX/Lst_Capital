@@ -1133,6 +1133,12 @@ nav .search-form label:hover {
   transition: .3s;
 }
 
+@media (min-width: 992px) {
+  #testimonials .testimonial-item p {
+    /* width: 80%; */
+  }
+}
+
 #testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
