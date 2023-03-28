@@ -260,7 +260,7 @@
     loop: true,
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false
+      disableOnInteraction: true
     },
     slidesPerView: 'auto',
     pagination: {
@@ -270,18 +270,26 @@
     },
     breakpoints: {
       320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      572: {
         slidesPerView: 2,
         spaceBetween: 20
       },
-      480: {
+      690: {
         slidesPerView: 3,
         spaceBetween: 20
       },
-      640: {
+      885: {
         slidesPerView: 4,
         spaceBetween: 20
       },
-      992: {
+      1223: {
+        slidesPerView: 5,
+        spaceBetween: 20
+      },
+      1407: {
         slidesPerView: 6,
         spaceBetween: 20
       }
