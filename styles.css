@@ -672,6 +672,21 @@ nav .search-form label:hover {
   #goal .goal-img img {
     max-width: 100%;
   }
+  .recent-blog .card1{
+    margin: 0px 0px!important;
+    display: flex;
+    justify-content: center;
+  }
+  .recent-blog .card2{
+    margin: 0px 0px!important;
+    display: flex;
+    justify-content: center;
+  }
+  .recent-blog .card3{
+    margin: 0px 0px!important;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 
@@ -819,7 +834,12 @@ nav .search-form label:hover {
   margin-top: -50px;
   transition: margin 0.2s;
 }
-
+#team .member:hover{
+  transform: rotateY(180deg);
+}
+#team .member:hover .member-info{
+  transform: rotateY(180deg);
+}
 #team .member:hover .member-info {
   background: rgba(0, 0, 0, 0.7);
   opacity: 1;
@@ -2183,4 +2203,272 @@ p.chunks_text {
   transform: scale(1.3);
   margin-top:21px;
 
+}
+
+/* Changes from madhvesh team section */
+/* Cards animation flip right */
+#team .flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 215px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 15px 26px;
+}
+
+/* This container is needed to position the front and back side */
+#team .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+#team .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+#team .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+   -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+#team .flip-card-front {
+  background-color: #bbb;
+  color: black;
+  width: 200px;
+  height: 215px;
+  border: 15px solid #55BA53;;
+  box-shadow: 4px 5px 10px 0px rgba(0, 0, 0, 0.425);
+}
+#team .flip-card-front img{
+  box-shadow: 3px 2px 8px 0px black;
+}
+/* Style the back side */
+#team .flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  height: 218px;
+  width:202px;
+  background: rgb(0, 0, 0);
+  box-shadow: 3px 2px 8px 0px black;
+  transition: 0.4s;
+  background-image: "assets/img/team-1.jpg";
+  margin-left: -10px;
+}
+#team .card-back-content{
+  display: flex;
+    transition: all 0.2s ease 0s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0px 5px;
+position: relative;
+    background-image: url(assets/img/team-1.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 20;
+}
+#team .flip-card:nth-child(2) .card-back-content{
+  background-image: url(assets/img/team-2.jpg)!important;
+}
+#team .flip-card:nth-child(3) .card-back-content{
+  background-image: url(assets/img/team-3.jpg)!important;
+}
+#team .flip-card:nth-child(4) .card-back-content{
+  background-image: url(assets/img/team-4.jpg)!important;
+}
+#team .card-back-content::before{
+  content: "";
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: 0.7;
+  cursor: pointer;
+
+}
+#team #team .flip-card4{
+  animation-name: card-right;
+  animation-duration: 4s;
+}
+@keyframes card-right{
+  0% {
+    position: absolute;
+    inset: 0;
+  }
+  /* 100%{
+    right:0px;
+  } */
+}
+#team .social i:hover{
+color: #18d26e!important;
+}
+
+/* Recent Blog Animation */
+
+/*TODO: clean it all up, finish flex, add aesthetics, icons, redefine to be relative to vh-vw, maybe rework v2 variant using scss and frames and real transitions? */
+
+.recent-blog .infocardContainer * {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 300;
+}
+.recent-blog h2 {
+  font-weight: 600; font-style: italic; font-family: "Fira Sans Condensed", sans-serif;
+}
+.recent-blog .card1{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 120px;
+}
+.recent-blog .card2{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 120px;
+}
+.recent-blog .card3{
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 120px;
+}
+.recent-blog .infocardContainer {
+  display: flex;
+  height: 200px;
+  width:200px;
+  border-radius: 100px;
+  background: rgb(0,159,255);
+  background: linear-gradient(121deg, rgba(52, 162, 209, 0) -11%, #0A2940 100%);
+  transition:all 0.5s ease-in;
+  transition-delay: 1s;
+  margin-top: 70px;
+  --margin-top: 100px;
+  box-shadow: 4px 2px 23px 0px black;
+}
+.recent-blog .blogboxesscroll{
+  width: 800px;
+  height: 220px;
+  border-radius: 100px 10px 100px 100px;
+  transition: all 1s ease-out;
+}
+
+.recent-blog .infocardContainer div {
+  color: white;
+  flex-shrink: 1;
+  width: 100%;
+  --background-color: rgb(138, 31, 31);
+}
+.recent-blog .infocardContainer div * {
+  display: flex;
+  --flex: inherit;
+  overflow: hidden;
+  text-overflow: hidden;
+  --background-color: yellow;
+  color: white;
+  white-space: nowrap;
+  width: 0;
+  height: auto;
+  transition: all 450ms ease-in;
+  transition-delay: 1s;
+}
+/* .blogboxcontent{ */
+  .recent-blog .infocardContainer div *{
+  display: flex;
+  visibility: visible;
+  transition: all 1s ease-out;
+  transition-delay: 500ms;
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+}
+
+.recent-blog .infocardContainer #main,.recent-blog  .infocardContainer #main img{
+  --background-color: red;
+  height: 200px;
+  width: 200px;
+  padding-right: 10px;
+  border-radius: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.recent-blog .infocardContainer #main img{
+  height: 180px;
+  width: 180px;
+  transition: none;
+  display: float;
+  position: relative;
+  border: 10px solid white;
+  margin: 0 0 0 0; padding: 0 0 0 0;
+}
+.recent-blog .infocardContainer #textbois {
+  position: relative;
+  width: 583px;
+  padding-top: 10px;;
+}
+.recent-blog .infocardContainer #textbois #hotlinks {
+  max-width: 60%;
+  max-height: 30px;
+  --background-color: white;
+  position:absolute;
+  bottom: 5px;
+  display: flex;
+  justify-content: center;
+  border-radius: 13px;
+}
+.recent-blog .infocardContainer #textbois #hotlinks * {
+  background-color: black;
+    max-width: 193px;
+    height: 38px;
+    --margin: 0 1px 0 1px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+.recent-blog #hotlinks{
+  color: black;
+}
+.recent-blog{
+  background-color: rgba(183, 164, 164, 0);
+}
+
+.recent-blog h2{
+  background-color: rgba(183, 164, 164, 0);
+  border-radius: 30px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.recent-blog .blog-title{
+  color: #0a2940;
+  margin: 5px;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  
+}
+.recent-blog h2:hover{
+  background-color: rgba(183, 164, 164, 0);
+}
+
+.recent-blog h2:hover .blog-title{
+  /* color: black; */
+  text-decoration: none;
+  background-color: rgba(183, 164, 164, 0);
+  color: black;
+}
+.recent-blog .recent-tag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

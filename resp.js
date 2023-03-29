@@ -79,7 +79,7 @@ window.onscroll = () => {
 
 
 // Navbar 
-
+let blog = document.querySelectorAll('.infocardContainer');
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -102,6 +102,23 @@ function scrollFunction() {
       element.classList.remove('nav-list-add');
     });
 
+  }
+  if (document.body.scrollTop >3100 || document.documentElement.scrollTop > 3100) {
+    blog[0].classList.add("blogboxesscroll");
+  } else {
+    blog[0].classList.remove("blogboxesscroll");
+  }
+  if (document.body.scrollTop >3300 || document.documentElement.scrollTop > 3300) {
+    blog[1].classList.add("blogboxesscroll");
+    console.log(blog[1]);
+  } else {
+    blog[1].classList.remove("blogboxesscroll");
+  }
+  if (document.body.scrollTop >3600|| document.documentElement.scrollTop > 3600) {
+    blog[2].classList.add("blogboxesscroll");
+    console.log(blog[2]);
+  } else {
+    blog[2].classList.remove("blogboxesscroll");
   }
 }
 
