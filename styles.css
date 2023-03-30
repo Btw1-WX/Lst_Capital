@@ -665,7 +665,7 @@ nav .search-form label:hover {
   #goal .goal-text .contents .content {
     /* text-align: center; */
     justify-content: center;
-    max-width: 300px;
+    max-width: 400px;
     flex-direction: column;
   }
 
@@ -982,11 +982,11 @@ nav .search-form label:hover {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 0px 86px;
+  margin: 45px 40px;
   margin-bottom: 62px;
-    padding: 11px 0px;
-    border-radius: 11px;
-    box-shadow: 2px 1px 9px 0px black;
+  padding: 11px 0px;
+  border-radius: 11px;
+  box-shadow: 2px 1px 9px 0px black;
 
 }
 
@@ -2340,7 +2340,7 @@ color: #18d26e!important;
 .recent-blog .card3{
   display: flex;
   justify-content: flex-start;
-  margin: 0 120px;
+  margin: 0 120px 30px;
 }
 .recent-blog .infocardContainer {
   display: flex;
