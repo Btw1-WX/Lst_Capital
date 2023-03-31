@@ -723,6 +723,7 @@ nav .search-form label:hover {
   margin: 0 0 4rem 1rem;
   transform-style: preserve-3d;
   transform: translateZ(20px);
+  height: 411px;
 }
 
 #about .about-col .img {
@@ -933,7 +934,7 @@ nav .search-form label:hover {
   border-radius: 15px;
   box-shadow: 0px -3px 4px 0px #198754d6;
   margin: 0px 50px;
-  transition: ease-in-out .9s;
+  /* transition: ease-in-out .9s; */
   background-color: #e2e2e2;
   /* animation: 4s animation2 infinite; */
 }
@@ -1545,6 +1546,7 @@ padding: 0;
 
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
+  margin-left: -71px;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1590,6 +1592,7 @@ padding: 0;
 #footer .footer-top .social-links a:hover {
   background: #18d26e;
   color: #fff;
+  text-decoration: none;
 }
 
 #footer .footer-top h4 {
@@ -1624,6 +1627,7 @@ padding: 0;
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
   transition: all .6s;
+  margin-left: -80px;
 }
 
 #footer .footer-top .footer-links ul {
@@ -1659,6 +1663,8 @@ padding: 0;
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+  margin-right: 75px;
+  margin-left: 33px
 }
 
 #footer .footer-top .footer-contact p {
@@ -2075,8 +2081,8 @@ p.chunks_text {
 }
 
 .clients-slider:hover {
-  transform: scale(0.9);
-  transition: ease-in-out .9s;
+  /* transform: scale(0.9);
+  transition: ease-in-out .9s; */
 }
 
 .clients-slider:hover::after {
@@ -2142,7 +2148,6 @@ p.chunks_text {
 }
 
 .card-back-content {
-  margin-top: 110px;
   transition: all 0.2s;
 }
 
@@ -2169,6 +2174,7 @@ p.chunks_text {
 .social-links {
   display: flex;
   justify-content: flex-end;
+  width: 1250px;
 }
 
 .border-sha {
