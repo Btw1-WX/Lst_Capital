@@ -2340,7 +2340,7 @@ color: #18d26e!important;
 .recent-blog .card3{
   display: flex;
   justify-content: flex-start;
-  margin: 0 120px 30px;
+  margin: 0 120px 50px;
 }
 .recent-blog .infocardContainer {
   display: flex;
@@ -2413,7 +2413,7 @@ color: #18d26e!important;
 .recent-blog .infocardContainer #textbois {
   position: relative;
   width: 583px;
-  padding-top: 10px;;
+  padding-top: 25px;;
 }
 .recent-blog .infocardContainer #textbois #hotlinks {
   max-width: 60%;
@@ -2447,6 +2447,7 @@ color: #18d26e!important;
   width: 600px;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .recent-blog .blog-title{
