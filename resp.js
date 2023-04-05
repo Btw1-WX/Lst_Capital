@@ -83,7 +83,9 @@ let blog = document.querySelectorAll('.infocardContainer');
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
+  
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    
     document.getElementById("nav").classList.add("nav-add");
     document.getElementById("logo-img").classList.add("logo-img-add");
     // document.querySelector(".nav-list").classList.add("nav-list-add");

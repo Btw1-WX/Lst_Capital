@@ -205,14 +205,65 @@ nav .menu-btn i {
 input[type="checkbox"] {
   display: none;
 }
+@media (min-width: 1721px) {
+  .recent-blog .card1  {
+    margin: 0px 208px!important ;
+  }
+  .recent-blog .card2{
+    margin: 0px 208px!important;
+  }
+  .recent-blog .card3{
+    margin: 0px 208px!important;
+  }
+  
+  }
+@media (max-width: 1720px) {
+.recent-blog .card1  {
+  margin: 0px 80px!important ;
+}
+.recent-blog .card2{
+  margin: 0px 80px!important;
+}
+.recent-blog .card3{
+  margin: 0px 80px!important;
+}
+
+}
+@media (max-width: 1400px) {
+  .recent-blog .card1  {
+    margin: 0px 45px!important ;
+  }
+  .recent-blog .card2{
+    margin: 0px 45px!important;
+  }
+  .recent-blog .card3{
+    margin: 0px 45px!important;
+  }
+  
+  }
 
 @media (max-width: 1200px) {
+
+  .recent-blog .infocardContainer{
+    width: 705px!important;
+
+  }
+  .recent-blog #textbois{
+    width: 504px!important;
+    
+  }
+  .recent-blog #main{
+    width: 190px!important;
+    
+  }
+  .recent-blog .card1 , .recent-blog .card2, .recent-blog .card3{
+    margin: 0px 51px;
+    
+  }
+
   nav {
     padding: 0 83px 0 50px;
   }
-}
-
-@media (max-width: 1200px) {
   nav .menu-btn i {
     display: block;
   }
@@ -644,6 +695,11 @@ nav .search-form label:hover {
 }
 
 @media(max-width: 1028px) {
+  .recent-blog .card1, .recent-blog .card2,.recent-blog .card3{
+    margin: 0px 0px!important;
+    display: flex!important;
+    justify-content: center!important;
+  }
   #goal {
     flex-direction: column;
   }
@@ -672,22 +728,81 @@ nav .search-form label:hover {
   #goal .goal-img img {
     max-width: 100%;
   }
+  .recent-blog .infocardContainer{
+    width: 435px!important;
+    height: 336px!important;
+    display: flex!important;
+    flex-direction: column!important;
+    
+  }
+  .recent-blog #main{
+      width: auto!important;
+      height: 135px!important;
+      display: flex!important;
+      justify-content: center!important;
+      margin: 8px 0px!important;
+    
+  }
+  .recent-blog #main img{
+    height: 152px!important;
+    width: 160px!important;
+    border: 6px solid white!important;
+
+  
+  }
+
+  .recent-blog #textbois{
+    height: 152px!important;
+
+  
+  }
+  .recent-blog .infocardContainer div * {
+    font-size: 15px!important;
+    width: 446px!important;
+    display: flex!important;
+    justify-content: center!important;
+
+  }
+  .recent-blog .infocardContainer #textbois .textbois_h6 {
+   width: 441px!important;
+
+  }
+  .recent-blog .infocardContainer #textbois .textbois_h6 h6 {
+    width: 400px!important;
+ 
+   }
+   
+   .recent-blog .infocardContainer #textbois #hotlinks{
+    max-width: 90%!important;
+    max-height: 37px;
+    --background-color: white;
+    position: absolute;
+    top: 144px!important;
+    bottom: -21px!important;
+    display: flex;
+    justify-content: center;
+    border-radius: 13px;
+}
+   }
+
+
+
   .recent-blog .card1{
-    margin: 0px 0px!important;
+    margin: 0px 0px;
     display: flex;
     justify-content: center;
   }
   .recent-blog .card2{
-    margin: 0px 0px!important;
+    margin: 0px 0px;
     display: flex;
     justify-content: center;
   }
   .recent-blog .card3{
-    margin: 0px 0px!important;
+    margin: 0px 0px;
     display: flex;
     justify-content: center;
   }
-}
+
 
 
 /* About Us Section
@@ -1153,13 +1268,6 @@ nav .search-form label:hover {
   color: white !important;
   transition: .3s;
 }
-
-@media (min-width: 992px) {
-  #testimonials .testimonial-item p {
-    /* width: 80%; */
-  }
-}
-
 #testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
@@ -1475,6 +1583,11 @@ padding: 0;
 }
 /* responsive */
 @media(max-width:991px) {
+  .recent-blog .card1, .recent-blog .card2,.recent-blog .card3{
+    margin: 0px 0px!important;
+    display: flex!important;
+    justify-content: center!important;
+  }
   .contact-us{
       background: white;
   }
@@ -2357,9 +2470,10 @@ color: #18d26e!important;
   background: linear-gradient(121deg, rgba(52, 162, 209, 0) -11%, #0A2940 100%);
   transition:all 0.5s ease-in;
   transition-delay: 1s;
-  margin-top: 70px;
+  margin-top: 23px;
   --margin-top: 100px;
   box-shadow: 4px 2px 23px 0px black;
+  margin-bottom: 70px;
 }
 .recent-blog .blogboxesscroll{
   width: 800px;
