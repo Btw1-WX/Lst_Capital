@@ -1625,14 +1625,15 @@ padding: 0;
 
 /* contact us ends */
 
-  
-/* Footer Styling  */
+      
 #footer {
   background: #000;
+  padding: 0 0 30px 0;
   color: #eee;
-  padding-bottom: 1rem;
   font-size: 14px;
+
 }
+
 #footer .footer-top::before {
   content: "";
   position: absolute;
@@ -1649,17 +1650,17 @@ padding: 0;
 
 #footer .footer-top {
   background: #111;
-  padding: 30px 0 30px 0;
+  padding: 60px 0 30px 0;
   z-index: 10;
+
   position: relative;
-  background-image: url(./assets/img/about-bg.jpeg);
+  background-image: url(assets/img/about-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
 
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
-  margin-left: -71px;
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1705,7 +1706,6 @@ padding: 0;
 #footer .footer-top .social-links a:hover {
   background: #18d26e;
   color: #fff;
-  text-decoration: none;
 }
 
 #footer .footer-top h4 {
@@ -1740,7 +1740,7 @@ padding: 0;
 #footer .footer-top .footer-links {
   margin-bottom: 30px;
   transition: all .6s;
-  margin-left: -80px;
+
 }
 
 #footer .footer-top .footer-links ul {
@@ -1776,8 +1776,6 @@ padding: 0;
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
-  margin-right: 75px;
-  margin-left: 33px
 }
 
 #footer .footer-top .footer-contact p {
@@ -1820,18 +1818,13 @@ padding: 0;
   color: #ddd;
 }
 
-/* wizard team logo */
-
-* {
-  margin: 0%;
-  padding: 0%;
-}
 
 footer {
   position: relative;
   bottom: 0;
   width: 100%;
   background-color: #571581;
+  padding: 1rem 0;
   text-align: center;
   color: white;
 }
@@ -2287,7 +2280,6 @@ p.chunks_text {
 .social-links {
   display: flex;
   justify-content: flex-end;
-  width: 1250px;
 }
 
 .border-sha {
@@ -2304,7 +2296,7 @@ p.chunks_text {
 
 .border-sha2:hover {
   transition: all .8s;
-  box-shadow: 0px 0px 12px 3px rgb(85, 186, 83,0.342);
+  box-shadow: 0px 0px 12px 3px rgb(85, 186, 83, 0.342);
   border-left: 0px;
   border-top: 0px;
   cursor: pointer;
@@ -2317,10 +2309,11 @@ p.chunks_text {
   border-top: 0px;
   cursor: pointer;
 }
-.footer-links-map:hover{
+
+.footer-links-map:hover {
   transition: all .6s;
   transform: scale(1.3);
-  margin-top:21px;
+  margin-top: 21px;
 
 }
 
