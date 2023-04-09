@@ -144,19 +144,23 @@ body {
   height: 100vh;
 }
 
+
 /* Top Navbar */
 
+.navbar-main{
+  display: flex;
+  justify-content: center;
+}
 nav {
   height: 53px;
-  width: 100%;
+width: 60%;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 28px 0px 104px;
-  flex-wrap: wrap;
   position: fixed;
   top: 0px;
   z-index: 1000;
   display: flex !important;
+  margin: 15px 10px ;
 }
 
 nav .logo {
@@ -170,12 +174,11 @@ nav .logo {
 nav ul {
   display: flex;
   padding-top: 16px;
-  flex-wrap: wrap;
   list-style: none;
 }
 
 nav ul li {
-  margin: 0 5px;
+  margin: 0 11px;
 }
 
 nav ul li a {
@@ -183,7 +186,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 12px;
   font-weight: 700;
-  padding: 0px 12px;
+  padding: 0px 0px;
   border-radius: 5px;
   letter-spacing: 1px;
   transition: all 0.3s ease;
@@ -215,8 +218,9 @@ input[type="checkbox"] {
   .recent-blog .card3{
     margin: 0px 208px!important;
   }
-  
+ 
   }
+  
 @media (max-width: 1720px) {
 .recent-blog .card1  {
   margin: 0px 80px!important ;
@@ -239,6 +243,7 @@ input[type="checkbox"] {
   .recent-blog .card3{
     margin: 0px 45px!important;
   }
+  
   
   }
 
@@ -714,6 +719,33 @@ nav .search-form label:hover {
 }
 
 @media(max-width: 768px) {
+/* testimonial */
+#testimonials .testimonial-item{
+  flex-direction: column!important;
+  margin: 16px 0px 44px 0px!important;
+}
+#testimonials .testimonial-item hr{
+  display: none;
+}
+#testimonials .testimonial-item .testimonial-item{
+  width: 125px!important;
+}
+#testimonials .testimonial-item p {
+  font-size: 14px!important;
+
+}
+#testimonials .testimonial-item h4{
+  margin: 0px 0px!important;
+}
+.testi-info {
+  padding: 26px 39px 25px 22px!important;
+  margin: 0px 42px!important;
+}
+#testimonials .quote_img img{
+  height: 20px!important;
+}
+
+/* priorities */
   #goal {
     flex-direction: column;
   }
@@ -735,58 +767,7 @@ nav .search-form label:hover {
     flex-direction: column!important;
     
   }
-  .recent-blog #main{
-      width: auto!important;
-      height: 135px!important;
-      display: flex!important;
-      justify-content: center!important;
-      margin: 8px 0px!important;
-    
-  }
-  .recent-blog #main img{
-    height: 152px!important;
-    width: 160px!important;
-    border: 6px solid white!important;
-
-  
-  }
-
-  .recent-blog #textbois{
-    height: 152px!important;
-
-  
-  }
-  .recent-blog .infocardContainer div * {
-    font-size: 15px!important;
-    width: 446px!important;
-    display: flex!important;
-    justify-content: center!important;
-
-  }
-  .recent-blog .infocardContainer #textbois .textbois_h6 {
-   width: 441px!important;
-
-  }
-  .recent-blog .infocardContainer #textbois .textbois_h6 h6 {
-    width: 400px!important;
- 
-   }
-   
-   .recent-blog .infocardContainer #textbois #hotlinks{
-    max-width: 90%!important;
-    max-height: 37px;
-    --background-color: white;
-    position: absolute;
-    top: 144px!important;
-    bottom: -21px!important;
-    display: flex;
-    justify-content: center;
-    border-radius: 13px;
-}
-   }
-
-
-
+  /* recent blogs */
   .recent-blog .card1{
     margin: 0px 0px;
     display: flex;
@@ -802,7 +783,68 @@ nav .search-form label:hover {
     display: flex;
     justify-content: center;
   }
+  
+  .recent-blog #main{
+      width: auto!important;
+      height: 135px!important;
+      display: flex!important;
+      justify-content: center!important;
+      margin: 8px 0px!important;
+  }
+  .recent-blog #main img{
+    height: 152px!important;
+    width: 160px!important;
+    border: 6px solid white!important;
+  }
+  .recent-blog #textbois{
+    height: 152px!important;
+  }
+  .recent-blog .infocardContainer div * {
+    font-size: 15px!important;
+    width: 446px!important;
+    display: flex!important;
+    justify-content: center!important;
+  }
+  .recent-blog .infocardContainer #textbois .textbois_h6 {
+   width: 441px!important;
+  }
+  .recent-blog .infocardContainer #textbois .textbois_h6 h6 {
+    width: 400px!important;
+   }
 
+   .recent-blog .infocardContainer #textbois #hotlinks{
+    max-width: 90%!important;
+    max-height: 37px;
+    --background-color: white;
+    position: absolute;
+    top: 144px!important;
+    bottom: -21px!important;
+    display: flex;
+    justify-content: center;
+    border-radius: 13px;
+}
+   }
+
+   @media(max-width: 592px) {
+    #testimonials {
+      height: auto!important;
+    }
+    #testimonials .container{
+    height: 76%!important;
+    width: 75%!important;
+    margin: 55px 0px!important;
+   }
+
+   #clients{
+    margin: 6px 50px!important;
+   }
+
+   }
+   @media(max-width: 492px) {
+    .contact-us .contactUs{
+      padding:40px 0px!important;
+    }
+   }
 
 
 /* About Us Section
@@ -821,10 +863,22 @@ nav .search-form label:hover {
 }
 
 #about {
+ position: relative;
+  /* padding: 60px 0 40px 0; */
+  position: relative;
   background: url("assets/img/about-bg.jpeg") center top no-repeat fixed;
   background-size: cover;
-  padding: 60px 0 40px 0;
-  position: relative;
+
+}
+#about::before{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.7;
+  background-color: black;
+
+ 
 }
 
 #about .container {
@@ -838,7 +892,8 @@ nav .search-form label:hover {
   margin: 0 0 4rem 1rem;
   transform-style: preserve-3d;
   transform: translateZ(20px);
-  height: 411px;
+  /* height: 411px; */
+  height: auto;
 }
 
 #about .about-col .img {
@@ -1964,15 +2019,11 @@ footer .copyright .logo-bottom {
 .nav-add {
   display: flex !important;
   height: 78px;
-  max-width: 87%;
+  width: 60%;
+  margin: auto!important;
   background: #000000b8;
-  align-items: center;
-  justify-content: space-between;
   border-radius: 13px;
-  margin: 12px 6.5%;
-  padding: 2px 95px 3px 3px;
   display: flex;
-  flex-wrap: wrap;
   position: fixed;
   top: 7px;
   z-index: 1000;
@@ -2009,6 +2060,8 @@ footer .copyright .logo-bottom {
   background-color: #CFCFCF;
   padding: 90px 0px;
   margin-top: 60px;
+  margin: 7px 0px;
+    box-shadow: 0px 0px 17px 2px black;
 }
 
 .services_section_2  h1{
@@ -2586,3 +2639,40 @@ color: #18d26e!important;
   justify-content: center;
   align-items: center;
 }
+
+
+/* recent blogs bg */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.gradient {
+  --size: 250px;
+  --speed: 50s;
+  --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+  width: var(--size);
+  height: var(--size);
+  filter: blur(calc(var(--size) / 5));
+  background-image: linear-gradient(hsl(158, 82, 57, 85%), hsl(252, 82, 57));
+  animation: rotate var(--speed) var(--easing) alternate infinite;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+@media (min-width: 720px) {
+  .gradient {
+    --size: 500px;
+  }
+}
+/* This is just to transition when you change the viewport size. */
+* {
+  transition: all 0.25s ease-out;
+}
+#footer hr{
+  margin: 0px 100px;
+}
+
