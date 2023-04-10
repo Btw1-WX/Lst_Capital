@@ -526,7 +526,7 @@ nav .search-form label:hover {
   height: 250px;
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
-  margin: 5rem 0 0 20px;
+  margin: 5rem 0 0 6px;
   padding: 20px;
   perspective: 1000px;
   transform-style: preserve-3d;
@@ -843,19 +843,52 @@ nav .search-form label:hover {
     }
     #testimonials .container{
     height: 76%!important;
-    width: 75%!important;
+    width: 85%!important;
     margin: 55px 0px!important;
    }
+   .swiper-slide {
+    display: flex!important;
+    justify-content: center!important;
+  }
 
    #clients{
     margin: 6px 50px!important;
    }
-
+   .nav-add {
+    height: 60px!important;
    }
+  }
    @media(max-width: 492px) {
     .contact-us .contactUs{
       padding:40px 0px!important;
     }
+    #clients img{
+      max-width: 168px!important;
+    }
+    
+    #testimonials .section-header h3 {
+      font-size: 2rem!important;
+  }
+  .section-header p {
+    margin: 0px 18px!important;
+}
+.house_icon{
+  display: flex!important;
+  justify-content: center!important;
+
+}
+ p.chunks_text{
+  width: 100%!important;
+  text-align: center!important;
+
+}
+.readmore_button {
+  display: flex!important;
+  justify-content: center!important;
+  width: 100%!important;
+
+}
+
    }
 
 
@@ -1138,7 +1171,7 @@ nav .search-form label:hover {
   padding: 30px 0px;
   border-radius: 15px;
   box-shadow: 0px -3px 4px 0px #ffd045;;
-  margin: 0px 50px;
+  margin: 0px 5px;
   /* transition: ease-in-out .9s; */
   background-color: #e2e2e2;
   /* animation: 4s animation2 infinite; */
@@ -1189,7 +1222,7 @@ background: linear-gradient(90deg, rgba(10,41,64,1) 0%, rgba(2,0,36,1) 0%, rgba(
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 45px 40px;
+  margin: 45px 5px;
   margin-bottom: 62px;
   padding: 11px 0px;
   border-radius: 11px;
@@ -1916,7 +1949,8 @@ padding: 0;
 
 #footer .copyright {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 15px;
+  margin: 0;
 }
 
 #footer .credits {
